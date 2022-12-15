@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <!-- Sync trees -->
+        <project path="device/xiaomi/fog" name="alternoegraha/device_xiaomi_fog" remote="github" revision="aosp" />
+        <project path="vendor/xiaomi/fog" name="dblenk-project/vendor_xiaomi_fog" remote="github" revision="lineage-20.0" />
+        <project path="device/xiaomi/sm6225-common" name="alternoegraha/device_xiaomi_sm6225-common" remote="github" revision="tiramisu" />
+        <project path="vendor/xiaomi/sm6225-common" name="dblenk-project/vendor_xiaomi_sm6225-common" remote="github" revision="lineage-20.0" />
+        <project path="kernel/xiaomi/sm6225-common" name="dblenk-project/kernel_xiaomi_sm6225-common_header" remote="github" revision="lineage-19.1" />
+
+        <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/>
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master" clone-depth="1" />
+          
+        <!-- qcom-sepolicy -->
+        <remove-project name="android_device_qcom_sepolicy" />
+        <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-20.0" remote="github" />
+
+</manifest>
